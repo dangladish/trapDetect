@@ -29,7 +29,7 @@ You can install trapDetect from [GitHub](https://github.com/) with:
 devtools::install_github("dangladish/trapDetect")
 ```
 
-Please note that trapDetect is in early development and likely will change significantly.
+Please note that `trapDetect` is in development.
 
 ## The main function: `calc_escape_prob()`
 
