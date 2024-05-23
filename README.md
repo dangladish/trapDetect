@@ -25,7 +25,7 @@ devtools::install_github("dangladish/trapDetect")
 Please note that trapDetect is in early development and likely will
 change significantly.
 
-## The main function: calc_escape_prob()
+## The main function: `calc_escape_prob()`
 
 The main function is `calc_escape_prob()` which simulates the spread of
 a population of individuals using the `sim_spread()` function if not
@@ -41,17 +41,26 @@ calc_escape_prob()
 #> [1] "Warning: generating survey and raster..."
 #> [1] "No initial data detected, generating random simulations"
 #> $mean_prob
-#>  [1] 0.01062590 0.07916914 0.33672593 0.35273204 0.36670331 0.38948848
-#>  [7] 0.41201920 0.50599636 0.58316270 0.65313028 0.66167424
+#>  [1] 0.08177592 0.13328561 0.19965774 0.21039656 0.21553657 0.24105032
+#>  [7] 0.26093965 0.35252346 0.49053865 0.49448490 0.49683743
 #> 
 #> $probs
-#>              [,1]        [,2]        [,3]        [,4]       [,5]       [,6]
-#> [1,] 0.0006887759 0.001340866 0.005473481 0.007041243 0.01612678 0.01991006
-#> [2,] 0.0205630170 0.156997419 0.667978386 0.698422842 0.71727983 0.75906689
-#>            [,7]      [,8]      [,9]     [,10]     [,11]
-#> [1,] 0.04636318 0.2198791 0.3167590 0.4285579 0.4417856
-#> [2,] 0.77767523 0.7921136 0.8495664 0.8777026 0.8815629
+#>              [,1]        [,2]        [,3]        [,4]        [,5]        [,6]
+#> [1,] 0.0007166002 0.003782076 0.004438755 0.004679167 0.005514639 0.006047854
+#> [2,] 0.1628352433 0.262789149 0.394876718 0.416113951 0.425558497 0.476052793
+#>             [,7]        [,8]       [,9]      [,10]      [,11]
+#> [1,] 0.006338277 0.007416342 0.01501424 0.01630834 0.01927781
+#> [2,] 0.515541020 0.697630570 0.96606306 0.97266147 0.97439705
 ```
+
+## Simulate Capture: `sim_capture()`
+
+The `sim_capture()` focuses on trap catch counts rather than probability
+of capture. This function acts in a similar manner as `sim_spread()` but
+needs information about detection devices. This can be in the form of
+trap locations or number of traps in the space. If number of traps is
+specified, traps are arranged in a grid covering the block as much as
+possible.
 
 ## Contact
 
