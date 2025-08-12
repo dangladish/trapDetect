@@ -40,16 +40,16 @@ calc_escape_prob()
 #> [1] "Warning: generating survey and raster..."
 #> [1] "No initial data detected, generating random simulations"
 #> $mean_prob
-#>  [1] 0.008025985 0.022811375 0.025216805 0.026701872 0.027208147 0.028407272
-#>  [7] 0.028718021 0.028982756 0.029556890 0.029745062 0.030297559
+#>  [1] 0.01152833 0.03978443 0.18930905 0.20907187 0.21449004 0.22445540
+#>  [7] 0.24817596 0.27109780 0.27547246 0.28281291 0.28511016
 #> 
 #> $probs
-#>             [,1]       [,2]        [,3]        [,4]        [,5]        [,6]
-#> [1,] 0.002963116 0.00395469 0.004432051 0.005065513 0.005220681 0.005389026
-#> [2,] 0.013088855 0.04166806 0.046001558 0.048338230 0.049195613 0.051425518
+#>              [,1]         [,2]        [,3]        [,4]        [,5]        [,6]
+#> [1,] 0.0003720342 0.0006133695 0.001590724 0.001811953 0.001912382 0.002095057
+#> [2,] 0.0226846321 0.0789554859 0.377027376 0.416331785 0.427067698 0.446815745
 #>             [,7]        [,8]        [,9]       [,10]       [,11]
-#> [1,] 0.005492172 0.005706086 0.006495641 0.006742153 0.007640417
-#> [2,] 0.051943869 0.052259426 0.052618140 0.052747970 0.052954702
+#> [1,] 0.002672586 0.003568729 0.004298199 0.005563935 0.006909465
+#> [2,] 0.493679340 0.538626875 0.546646722 0.560061880 0.563310865
 ```
 
 ## Simulate Capture: `sim_capture()`
@@ -59,7 +59,8 @@ of capture. This function acts in a similar manner as `sim_spread()` but
 needs information about detection devices. This can be in the form of
 trap locations or number of traps in the space. If number of traps is
 specified, traps are arranged in a grid covering the block as much as
-possible.
+possible. It is recommended to run `sim_capture()` multiple times for
+uncertainty estimates.
 
 ## Contact
 
